@@ -1,0 +1,15 @@
+.PersonalData{
+    margin-top: 250px;
+    color: #f3f6f9;
+}
+.SwitchCV{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 15px;
+   /*  padding-right: 15px; */
+    margin-top: 50px;
+    color: #f3f6f9;
+    background-color: #2d3842;
+    
+}

@@ -1,0 +1,245 @@
+
+
+.BothSides{
+    display: flex;
+}
+.PersonalData{
+    margin-top: 250px;
+    color: #f3f6f9;
+}
+.LeftSide{
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    align-items: center;
+    z-index: 1; /* Añadido para que esté por encima del RightSide */
+}
+.ElementsLeftH1, .ElementsLeftH2, .ElementsLeftH6, .Social {
+    margin-left: 20%;
+}
+.ElementsLeftH1{
+    margin-top: 0px;
+    color: #5DD9C1;
+    font-size: 45px;
+}
+.ElementsLeftH2{
+    color: #EE4266;
+    font-size: 30px;
+}
+.ElementsLeftButtons{
+    display: grid;
+}
+.AboutMe{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    font-size: 20px;
+    width: 150px;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    text-align: left;
+    cursor:pointer
+}
+.AboutMe.scrolled {
+    padding-left: 4%;
+    color: #f3f6f9;
+}
+.AboutMe:hover {
+    cursor: pointer;
+    color: #f3f6f9;
+    padding-left: 4%;
+  }
+  .Certificates{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    font-size: 20px;
+    width: 150px;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    text-align: left;
+    cursor:pointer
+}
+.Certificates.scrolled {
+    padding-left: 4%;
+    color: #f3f6f9;
+}
+.Certificates:hover {
+    cursor: pointer;
+    color: #f3f6f9;
+    padding-left: 4%;
+  }
+  .Projects{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    font-size: 20px;
+    width: 150px;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    text-align: left;
+    cursor:pointer
+}
+.Projects.scrolled {
+    padding-left: 4%;
+    color: #f3f6f9;
+}
+.Projects:hover {
+    cursor: pointer;
+    color: #f3f6f9;
+    padding-left: 4%;
+  }
+  .Contact{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    font-size: 20px;
+    width: 150px;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    text-align: left;
+    cursor:pointer
+}
+.Contact.scrolled {
+    padding-left: 4%;
+    color: #f3f6f9;
+}
+.Contact:hover {
+    cursor: pointer;
+    color: #f3f6f9;
+    padding-left: 4%;
+  }
+
+.RightSide{
+    width: 50%;
+    display: grid;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 4%; 
+    margin-left: 50%;/* Ajustado el margin-right para posicionarlo correctamente */
+    z-index: 0; /* Añadido para que esté detrás del LeftSide */
+}
+.Social{
+    margin-top: 65px;
+    color: #f3f6f9;
+}
+.IconLink{
+    margin-right: 50px;
+}
+.IconLink:hover{
+    cursor: pointer;
+}
+.IconGHub{
+    margin-right: 50px;
+}
+.IconGHub:hover{
+    cursor: pointer;
+}
+.reflector {
+    position: fixed;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.1) 0%, /* Sutil al principio */
+      rgba(255, 255, 255, 0.09) 10%, /* Más sutil */
+      rgba(255, 255, 255, 0.08) 20%, /* ... */
+      rgba(255, 255, 255, 0.07) 30%,
+      rgba(255, 255, 255, 0.06) 40%,
+      rgba(255, 255, 255, 0.05) 50%, /* ... */
+      rgba(255, 255, 255, 0.04) 60%,
+      rgba(255, 255, 255, 0.03) 70%,
+      rgba(255, 255, 255, 0.02) 80%,
+      rgba(255, 255, 255, 0.01) 90%, /* Muy sutil */
+      rgba(255, 255, 255, 0) 100% /* Transparente en el borde exterior */
+    );
+    transition: opacity 0.3s ease;
+    opacity: 0.1; /* Inicialmente sutil */
+    z-index: 9999;
+  }
+
+
+  @media only screen and (max-width: 990px) {
+    .LeftSide{
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        transform: translateY(-10%);
+        background-color: #00163D;
+        
+    }
+    .ElementsLeftH1, .ElementsLeftH2, .ElementsLeftH6, .Social {
+        margin-left: 2%;
+    }
+    .ElementsLeftH1{
+        margin-top: 3%;
+        color: #5DD9C1;
+        font-size: 35px;
+        margin-bottom: 2px;
+    }
+    .ElementsLeftH2{
+        color: #EE4266;
+        font-size: 25px;
+        margin-top: 2px;
+    }
+    .ElementsLeftButtons{
+        display: none;
+    }
+    .Social{
+        display: none;
+    }
+    .RightSide{
+        width: 100%;
+        display: grid;
+        align-items: center;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        margin-right: 2%; 
+        margin-left: 2%;/* Ajustado el margin-right para posicionarlo correctamente */
+        z-index: 0; /* Añadido para que esté detrás del LeftSide */
+    }
+    .BothSides{
+        width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 991px) and (max-width: 1300px) {
+    .ElementsLeftButtons{
+        display: none;
+    }
+    .LeftSide{
+        width: 50%;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        display: grid;
+        align-items: center;
+        z-index: 1; /* Añadido para que esté por encima del RightSide */
+    }
+    .ElementsLeftH1{
+        font-size: 45px;
+    }
+    .ElementsLeftH2{
+        font-size: 30px;
+    }
+    .ElementsLeftH1, .ElementsLeftH2, .ElementsLeftH6, .Social {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .IconGHub:hover{
+        cursor: pointer;
+    }
+    .IconLink:hover{
+        cursor: pointer;
+    }
+  }

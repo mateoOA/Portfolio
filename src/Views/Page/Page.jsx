@@ -5,7 +5,7 @@ import ContactMe from "../ContactMe/ContactMe";
 import Proyectos from '../Proyects/Poryects';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import "./Landing.css"
+import "./Page.css"
 
 function Landing(){
     const reflectorRef = useRef();

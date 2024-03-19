@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Switch from '@mui/material/Switch';
-import CVEng from "../../../public/Mateo Ossorio Arana CV (english).png"
-import CVEs from "../../../public/Mateo Ossorio Arana CV.png"
+import CVEng from "../../../public/Mateo Ossorio Arana CV (english).jpg"
+import CVEs from "../../../public/Mateo Ossorio Arana CV.jpg"
 import "./ContactMe.css"
 
 

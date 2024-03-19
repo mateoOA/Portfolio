@@ -35,14 +35,14 @@ function Landing(){
           document.querySelector('.Certificates').classList.remove('scrolled');
         }
   
-        if (scrollY >= 3450 && scrollY < 5950) {
+        if (scrollY >= 3450 && scrollY < 4950) {
           // Estás en la sección "Proyectos"
           document.querySelector('.Projects').classList.add('scrolled');
         } else {
           document.querySelector('.Projects').classList.remove('scrolled');
         }
   
-        if (scrollY >= 5950) {
+        if (scrollY >= 4950) {
           // Estás en la sección "Contacto"
           document.querySelector('.Contact').classList.add('scrolled');
         } else {

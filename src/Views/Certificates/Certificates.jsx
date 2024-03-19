@@ -9,7 +9,6 @@ function Certificates() {
       <img
         src={Efset}
         width="100%"
-        height="600px"
         className="Efset"
       />
         <span className="Horizontal">    

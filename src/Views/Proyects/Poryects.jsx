@@ -1,11 +1,21 @@
 import Img from "../../../public/imgPlaceHolder.jpg"
 import Img1 from "../../../public/PFHenry.png"
+import Img2 from "../../../public/gJeneraSon.png"
+import Img3 from "../../../public/TestPage.png"
+
 import "./Proyects.css"
 
 function Proyectos(){
     const handleClickProject1 = () => {
         window.open('https://youtu.be/4aEbKqE1Bmo', '_blank');
-      };
+    };
+    const handleClickProject2 = () => {
+        window.open('https://youtu.be/ohEuFrWZxF4', '_blank');
+    };
+    const handleClickProject3 = () => {
+        window.open('https://youtu.be/wOZTDFcnVOY', '_blank');
+    };
+      
     return(
         <span className="CardContainer">
             <h3 className="ProjectsH1">Proyectos</h3>
@@ -16,55 +26,21 @@ function Proyectos(){
                     <p className="ProjectsP">Proyecto en grupo de un ecomerce de suplementos nutricionales. Cuenta con listado de productos, carrito de compras, registro e ingreso a la pagina, dashboard de admin donde se puede ver y editar los productos.</p>
                 </span>
             </span>
-            <span className="Card" >
-                <img src={Img} alt="placeholder" style={{height:"100px", width:"150px", marginLeft:"15px"}}/>
+            <span className="Card" onClick={handleClickProject2} >
+                <img src={Img2} alt="placeholder" style={{height:"100px", width:"150px", marginLeft:"15px"}}/>
                 <span>
-                    <h6 className="ProjectsH">Lorem ipsum</h6>
-                    <p className="ProjectsP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam repudiandae nesciunt dolorum ducimus nisi deserunt laborum deleniti a. Quis dolor nisi nihil nesciunt blanditiis facere inventore accusantium. Sint, consequatur aliquid.</p>
+                    <h6 className="ProjectsH">gJenerASON</h6>
+                    <p className="ProjectsP">Proyecto en solitario realizando un generador de archivos Json.</p>
                 </span>
             </span>
-            <span className="Card">
-                <img src={Img} alt="placeholder" style={{height:"100px", width:"150px", marginLeft:"15px"}}/>
+            <span className="Card" onClick={handleClickProject3}>
+                <img src={Img3} alt="placeholder" style={{height:"100px", width:"150px", marginLeft:"15px"}}/>
                 <span>
-                    <h6 className="ProjectsH">Lorem ipsum</h6>
-                    <p className="ProjectsP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam repudiandae nesciunt dolorum ducimus nisi deserunt laborum deleniti a. Quis dolor nisi nihil nesciunt blanditiis facere inventore accusantium. Sint, consequatur aliquid.</p>
+                    <h6 className="ProjectsH">Test Page</h6>
+                    <p className="ProjectsP">Pagina de prueba en donde se ponen en practica React, HTML y CSS.</p>
                 </span>
             </span>
-            <span className="Card">
-                <img src={Img} alt="placeholder" style={{height:"100px", width:"150px", marginLeft:"15px"}}/>
-                <span>
-                    <h6 className="ProjectsH">Lorem ipsum</h6>
-                    <p className="ProjectsP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam repudiandae nesciunt dolorum ducimus nisi deserunt laborum deleniti a. Quis dolor nisi nihil nesciunt blanditiis facere inventore accusantium. Sint, consequatur aliquid.</p>
-                </span>
-            </span>
-            <span className="Card">
-                <img src={Img} alt="placeholder" style={{height:"100px", width:"150px", marginLeft:"15px"}}/>
-                <span>
-                    <h6 className="ProjectsH">Lorem ipsum</h6>
-                    <p className="ProjectsP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam repudiandae nesciunt dolorum ducimus nisi deserunt laborum deleniti a. Quis dolor nisi nihil nesciunt blanditiis facere inventore accusantium. Sint, consequatur aliquid.</p>
-                </span>
-            </span>
-            <span className="Card">
-                <img src={Img} alt="placeholder" style={{height:"100px", width:"150px", marginLeft:"15px"}}/>
-                <span>
-                    <h6 className="ProjectsH">Lorem ipsum</h6>
-                    <p className="ProjectsP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam repudiandae nesciunt dolorum ducimus nisi deserunt laborum deleniti a. Quis dolor nisi nihil nesciunt blanditiis facere inventore accusantium. Sint, consequatur aliquid.</p>
-                </span>
-            </span>
-            <span className="Card">
-                <img src={Img} alt="placeholder" style={{height:"100px", width:"150px", marginLeft:"15px"}}/>
-                <span>
-                    <h6 className="ProjectsH">Lorem ipsum</h6>
-                    <p className="ProjectsP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam repudiandae nesciunt dolorum ducimus nisi deserunt laborum deleniti a. Quis dolor nisi nihil nesciunt blanditiis facere inventore accusantium. Sint, consequatur aliquid.</p>
-                </span>
-            </span>
-            <span className="Card">
-                <img src={Img} alt="placeholder" style={{height:"100px", width:"150px", marginLeft:"15px"}}/>
-                <span>
-                    <h6 className="ProjectsH">Lorem ipsum</h6>
-                    <p className="ProjectsP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam repudiandae nesciunt dolorum ducimus nisi deserunt laborum deleniti a. Quis dolor nisi nihil nesciunt blanditiis facere inventore accusantium. Sint, consequatur aliquid.</p>
-                </span>
-            </span>
+           
         </span>
     )
 }
